@@ -1,0 +1,163 @@
+[0.430s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'rover_sw_pwrtrain']
+[0.431s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['rover_sw_pwrtrain'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb0a1f8e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb0c0cc70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb0c0cc70>>)
+[1.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.157s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.157s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/abhijeet/home/abhijeet/ros2_ws/src'
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.211s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extension 'ignore'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extension 'ignore_ament_install'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extensions ['colcon_pkg']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extension 'colcon_pkg'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extensions ['colcon_meta']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extension 'colcon_meta'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extensions ['ros']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(gridrover_teleop) by extension 'ros'
+[1.225s] DEBUG:colcon.colcon_core.package_identification:Package 'gridrover_teleop' with type 'ros.ament_python' and name 'gridrover_teleop'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extensions ['ignore', 'ignore_ament_install']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extension 'ignore'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extension 'ignore_ament_install'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extensions ['colcon_pkg']
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extension 'colcon_pkg'
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extensions ['colcon_meta']
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extension 'colcon_meta'
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extensions ['ros']
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(ros_test) by extension 'ros'
+[1.232s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_test' with type 'ros.ament_cmake' and name 'ros_test'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extensions ['ignore', 'ignore_ament_install']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extension 'ignore'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extension 'ignore_ament_install'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extensions ['colcon_pkg']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extension 'colcon_pkg'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extensions ['colcon_meta']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extension 'colcon_meta'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extensions ['ros']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(rover_sw_pwrtrain) by extension 'ros'
+[1.236s] DEBUG:colcon.colcon_core.package_identification:Package 'rover_sw_pwrtrain' with type 'ros.ament_cmake' and name 'rover_sw_pwrtrain'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[1.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.318s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gridrover_teleop' in 'gridrover_teleop'
+[1.319s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros_test' in 'ros_test'
+[1.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.328s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/abhijeet/home/abhijeet/ros2_ws/src/install
+[1.333s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 316 installed packages in /opt/ros/humble
+[1.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'cmake_args' from command line to 'None'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'cmake_target' from command line to 'None'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'cmake_clean_cache' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'cmake_clean_first' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'cmake_force_configure' from command line to 'False'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'ament_cmake_args' from command line to 'None'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'catkin_cmake_args' from command line to 'None'
+[1.566s] Level 5:colcon.colcon_core.verb:set package 'rover_sw_pwrtrain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.566s] DEBUG:colcon.colcon_core.verb:Building package 'rover_sw_pwrtrain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain', 'merge_install': False, 'path': '/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain', 'symlink_install': False, 'test_result_base': None}
+[1.567s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.572s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.573s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain' with build type 'ament_cmake'
+[1.574s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain'
+[1.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.586s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain -- -j4 -l4
+[132.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain -- -j4 -l4
+[132.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain
+[132.358s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_sw_pwrtrain)
+[132.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain
+[132.369s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain' for CMake module files
+[132.376s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain' for CMake config files
+[132.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_sw_pwrtrain', 'cmake_prefix_path')
+[132.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/hook/cmake_prefix_path.ps1'
+[132.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/hook/cmake_prefix_path.dsv'
+[132.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/hook/cmake_prefix_path.sh'
+[132.386s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib'
+[132.387s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/bin'
+[132.387s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib/pkgconfig/rover_sw_pwrtrain.pc'
+[132.388s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib/python3.10/site-packages'
+[132.389s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/bin'
+[132.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.ps1'
+[132.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.dsv'
+[132.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.sh'
+[132.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.bash'
+[132.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.zsh'
+[132.403s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/colcon-core/packages/rover_sw_pwrtrain)
+[132.407s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_sw_pwrtrain)
+[132.407s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain' for CMake module files
+[132.409s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain' for CMake config files
+[132.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('rover_sw_pwrtrain', 'cmake_prefix_path')
+[132.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/hook/cmake_prefix_path.ps1'
+[132.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/hook/cmake_prefix_path.dsv'
+[132.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/hook/cmake_prefix_path.sh'
+[132.419s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib'
+[132.419s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/bin'
+[132.420s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib/pkgconfig/rover_sw_pwrtrain.pc'
+[132.421s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib/python3.10/site-packages'
+[132.423s] Level 1:colcon.colcon_core.environment:checking '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/bin'
+[132.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.ps1'
+[132.427s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.dsv'
+[132.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.sh'
+[132.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.bash'
+[132.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.zsh'
+[132.436s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/colcon-core/packages/rover_sw_pwrtrain)
+[132.439s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[132.440s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[132.440s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[132.440s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[132.460s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[132.461s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[132.461s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[132.549s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[132.550s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/local_setup.ps1'
+[132.557s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abhijeet/home/abhijeet/ros2_ws/src/install/_local_setup_util_ps1.py'
+[132.565s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/setup.ps1'
+[132.573s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/local_setup.sh'
+[132.577s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/abhijeet/home/abhijeet/ros2_ws/src/install/_local_setup_util_sh.py'
+[132.580s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/setup.sh'
+[132.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/local_setup.bash'
+[132.588s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/setup.bash'
+[132.602s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/local_setup.zsh'
+[132.605s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/abhijeet/home/abhijeet/ros2_ws/src/install/setup.zsh'

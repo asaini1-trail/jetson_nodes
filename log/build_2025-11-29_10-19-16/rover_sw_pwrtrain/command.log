@@ -1,0 +1,4 @@
+Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain -- -j6 -l6
+Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain -- -j6 -l6
+Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain
+Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain

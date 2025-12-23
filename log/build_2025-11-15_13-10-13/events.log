@@ -1,0 +1,571 @@
+[0.000000] (-) TimerEvent: {}
+[0.000997] (-) JobUnselected: {'identifier': 'ros_test'}
+[0.001799] (rover_sw_pwrtrain) JobQueued: {'identifier': 'rover_sw_pwrtrain', 'dependencies': OrderedDict()}
+[0.001890] (rover_sw_pwrtrain) JobStarted: {'identifier': 'rover_sw_pwrtrain'}
+[0.025460] (rover_sw_pwrtrain) JobProgress: {'identifier': 'rover_sw_pwrtrain', 'progress': 'cmake'}
+[0.027039] (rover_sw_pwrtrain) Command: {'cmd': ['/usr/bin/cmake', '/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain', '-DCMAKE_INSTALL_PREFIX=/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain'], 'cwd': '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'abhijeet'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abhijeet'), ('OLDPWD', '/home/abhijeet/home/abhijeet/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2258'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a9292841b9fa06ab9dde259f6915275b'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abhijeet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abhijeet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abhijeet-desktop:@/tmp/.ICE-unix/2258,unix/abhijeet-desktop:/tmp/.ICE-unix/2258'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20ddc885_8eb6_488f_888c_eb3cd4933d37'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a9292841b9fa06ab9dde259f6915275b'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/abhijeet/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test:/opt/ros/humble')]), 'shell': False}
+[0.099098] (-) TimerEvent: {}
+[0.185847] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199226] (-) TimerEvent: {}
+[0.300165] (-) TimerEvent: {}
+[0.349779] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.373941] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400295] (-) TimerEvent: {}
+[0.501275] (-) TimerEvent: {}
+[0.573691] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.598582] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.599433] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.600806] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.601304] (-) TimerEvent: {}
+[0.611825] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701650] (-) TimerEvent: {}
+[0.802790] (-) TimerEvent: {}
+[0.836754] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.860816] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.861803] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.863450] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.872385] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.902903] (-) TimerEvent: {}
+[1.003732] (-) TimerEvent: {}
+[1.104738] (-) TimerEvent: {}
+[1.205863] (-) TimerEvent: {}
+[1.306916] (-) TimerEvent: {}
+[1.319427] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.407141] (-) TimerEvent: {}
+[1.508140] (-) TimerEvent: {}
+[1.608612] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.609469] (-) TimerEvent: {}
+[1.632357] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.709785] (-) TimerEvent: {}
+[1.748270] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.761340] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.784561] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.809836] (-) TimerEvent: {}
+[1.818362] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.864220] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.909996] (-) TimerEvent: {}
+[1.986642] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.993670] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.010093] (-) TimerEvent: {}
+[2.110834] (-) TimerEvent: {}
+[2.208099] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.210897] (-) TimerEvent: {}
+[2.290380] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.311047] (-) TimerEvent: {}
+[2.405947] (rover_sw_pwrtrain) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.411169] (-) TimerEvent: {}
+[2.429535] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.511512] (-) TimerEvent: {}
+[2.612651] (-) TimerEvent: {}
+[2.640257] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.641406] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.712949] (-) TimerEvent: {}
+[2.814078] (-) TimerEvent: {}
+[2.849269] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.854038] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.914281] (-) TimerEvent: {}
+[3.015304] (-) TimerEvent: {}
+[3.116333] (-) TimerEvent: {}
+[3.217420] (-) TimerEvent: {}
+[3.228280] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.262418] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Generating done\n'}
+[3.276087] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Build files have been written to: /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain\n'}
+[3.315130] (rover_sw_pwrtrain) CommandEnded: {'returncode': 0}
+[3.317572] (rover_sw_pwrtrain) JobProgress: {'identifier': 'rover_sw_pwrtrain', 'progress': 'build'}
+[3.317728] (-) TimerEvent: {}
+[3.320440] (rover_sw_pwrtrain) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain', '--', '-j4', '-l4'], 'cwd': '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'abhijeet'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abhijeet'), ('OLDPWD', '/home/abhijeet/home/abhijeet/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2258'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a9292841b9fa06ab9dde259f6915275b'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abhijeet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abhijeet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abhijeet-desktop:@/tmp/.ICE-unix/2258,unix/abhijeet-desktop:/tmp/.ICE-unix/2258'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20ddc885_8eb6_488f_888c_eb3cd4933d37'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a9292841b9fa06ab9dde259f6915275b'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/abhijeet/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test:/opt/ros/humble')]), 'shell': False}
+[3.350939] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/cmake -S/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain -B/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain --check-build-system CMakeFiles/Makefile.cmake 0\n'}
+[3.391563] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain/CMakeFiles /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain//CMakeFiles/progress.marks\n'}
+[3.413847] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/Makefile2 all\n'}
+[3.416636] (rover_sw_pwrtrain) StdoutLine: {'line': b"gmake[1]: Entering directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'\n"}
+[3.417036] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/rover_sw_pwrtrain.dir/build.make CMakeFiles/rover_sw_pwrtrain.dir/depend\n'}
+[3.417828] (-) TimerEvent: {}
+[3.419974] (rover_sw_pwrtrain) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'\n"}
+[3.420230] (rover_sw_pwrtrain) StdoutLine: {'line': b'cd /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain/CMakeFiles/rover_sw_pwrtrain.dir/DependInfo.cmake --color=\n'}
+[3.444163] (rover_sw_pwrtrain) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'\n"}
+[3.444840] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/rover_sw_pwrtrain.dir/build.make CMakeFiles/rover_sw_pwrtrain.dir/build\n'}
+[3.448083] (rover_sw_pwrtrain) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'\n"}
+[3.472300] (rover_sw_pwrtrain) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/rover_sw_pwrtrain.dir/src/rover_sw_pwrtrain.cpp.o\x1b[0m\n'}
+[3.473467] (rover_sw_pwrtrain) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/rover_sw_pwrtrain.dir/src/main.cpp.o\x1b[0m\n'}
+[3.475828] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\"rover_sw_pwrtrain\\" -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include/rover_sw_pwrtrain -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DMODEL=rover_sw_pwrtrain -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=0 -DMT=0 -DROS2_PROJECT -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT -fpermissive -MD -MT CMakeFiles/rover_sw_pwrtrain.dir/src/rover_sw_pwrtrain.cpp.o -MF CMakeFiles/rover_sw_pwrtrain.dir/src/rover_sw_pwrtrain.cpp.o.d -o CMakeFiles/rover_sw_pwrtrain.dir/src/rover_sw_pwrtrain.cpp.o -c /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/rover_sw_pwrtrain.cpp\n'}
+[3.481756] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\"rover_sw_pwrtrain\\" -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include/rover_sw_pwrtrain -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DMODEL=rover_sw_pwrtrain -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=0 -DMT=0 -DROS2_PROJECT -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT -fpermissive -MD -MT CMakeFiles/rover_sw_pwrtrain.dir/src/main.cpp.o -MF CMakeFiles/rover_sw_pwrtrain.dir/src/main.cpp.o.d -o CMakeFiles/rover_sw_pwrtrain.dir/src/main.cpp.o -c /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/main.cpp\n'}
+[3.485317] (rover_sw_pwrtrain) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/rover_sw_pwrtrain.dir/src/ros2nodeinterface.cpp.o\x1b[0m\n'}
+[3.489254] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\"rover_sw_pwrtrain\\" -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include/rover_sw_pwrtrain -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DMODEL=rover_sw_pwrtrain -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=0 -DMT=0 -DROS2_PROJECT -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT -fpermissive -MD -MT CMakeFiles/rover_sw_pwrtrain.dir/src/ros2nodeinterface.cpp.o -MF CMakeFiles/rover_sw_pwrtrain.dir/src/ros2nodeinterface.cpp.o.d -o CMakeFiles/rover_sw_pwrtrain.dir/src/ros2nodeinterface.cpp.o -c /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/ros2nodeinterface.cpp\n'}
+[3.495485] (rover_sw_pwrtrain) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/rover_sw_pwrtrain.dir/src/slros2_initialize.cpp.o\x1b[0m\n'}
+[3.499569] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\"rover_sw_pwrtrain\\" -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include/rover_sw_pwrtrain -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DMODEL=rover_sw_pwrtrain -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=0 -DMT=0 -DROS2_PROJECT -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT -fpermissive -MD -MT CMakeFiles/rover_sw_pwrtrain.dir/src/slros2_initialize.cpp.o -MF CMakeFiles/rover_sw_pwrtrain.dir/src/slros2_initialize.cpp.o.d -o CMakeFiles/rover_sw_pwrtrain.dir/src/slros2_initialize.cpp.o -c /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/slros2_initialize.cpp\n'}
+[3.518193] (-) TimerEvent: {}
+[3.619783] (-) TimerEvent: {}
+[3.721543] (-) TimerEvent: {}
+[3.823158] (-) TimerEvent: {}
+[3.924802] (-) TimerEvent: {}
+[4.026802] (-) TimerEvent: {}
+[4.128439] (-) TimerEvent: {}
+[4.229679] (-) TimerEvent: {}
+[4.401678] (-) TimerEvent: {}
+[4.503476] (-) TimerEvent: {}
+[4.604796] (-) TimerEvent: {}
+[4.706118] (-) TimerEvent: {}
+[4.807398] (-) TimerEvent: {}
+[4.908703] (-) TimerEvent: {}
+[5.009980] (-) TimerEvent: {}
+[5.111349] (-) TimerEvent: {}
+[5.212741] (-) TimerEvent: {}
+[5.314007] (-) TimerEvent: {}
+[5.415732] (-) TimerEvent: {}
+[5.517511] (-) TimerEvent: {}
+[5.619298] (-) TimerEvent: {}
+[5.721183] (-) TimerEvent: {}
+[5.822872] (-) TimerEvent: {}
+[5.924116] (-) TimerEvent: {}
+[6.025462] (-) TimerEvent: {}
+[6.126716] (-) TimerEvent: {}
+[6.228008] (-) TimerEvent: {}
+[6.329299] (-) TimerEvent: {}
+[6.430604] (-) TimerEvent: {}
+[6.531892] (-) TimerEvent: {}
+[6.633278] (-) TimerEvent: {}
+[6.734573] (-) TimerEvent: {}
+[6.835893] (-) TimerEvent: {}
+[6.937282] (-) TimerEvent: {}
+[7.038577] (-) TimerEvent: {}
+[7.139817] (-) TimerEvent: {}
+[7.241077] (-) TimerEvent: {}
+[7.342364] (-) TimerEvent: {}
+[7.443628] (-) TimerEvent: {}
+[7.544954] (-) TimerEvent: {}
+[7.646189] (-) TimerEvent: {}
+[7.751452] (-) TimerEvent: {}
+[7.852712] (-) TimerEvent: {}
+[7.954021] (-) TimerEvent: {}
+[8.055297] (-) TimerEvent: {}
+[8.156600] (-) TimerEvent: {}
+[8.257895] (-) TimerEvent: {}
+[8.359171] (-) TimerEvent: {}
+[8.460521] (-) TimerEvent: {}
+[8.561843] (-) TimerEvent: {}
+[8.663179] (-) TimerEvent: {}
+[8.764532] (-) TimerEvent: {}
+[8.872208] (-) TimerEvent: {}
+[8.973505] (-) TimerEvent: {}
+[9.074726] (-) TimerEvent: {}
+[9.176033] (-) TimerEvent: {}
+[9.277395] (-) TimerEvent: {}
+[9.386202] (-) TimerEvent: {}
+[9.487521] (-) TimerEvent: {}
+[9.588857] (-) TimerEvent: {}
+[9.690253] (-) TimerEvent: {}
+[9.796199] (-) TimerEvent: {}
+[9.898336] (-) TimerEvent: {}
+[9.999713] (-) TimerEvent: {}
+[10.101067] (-) TimerEvent: {}
+[10.202335] (-) TimerEvent: {}
+[10.303608] (-) TimerEvent: {}
+[10.404861] (-) TimerEvent: {}
+[10.506294] (-) TimerEvent: {}
+[10.607547] (-) TimerEvent: {}
+[10.708803] (-) TimerEvent: {}
+[10.810078] (-) TimerEvent: {}
+[10.911385] (-) TimerEvent: {}
+[11.012726] (-) TimerEvent: {}
+[11.114038] (-) TimerEvent: {}
+[11.215322] (-) TimerEvent: {}
+[11.316596] (-) TimerEvent: {}
+[11.417901] (-) TimerEvent: {}
+[11.519182] (-) TimerEvent: {}
+[11.620458] (-) TimerEvent: {}
+[11.721755] (-) TimerEvent: {}
+[11.822986] (-) TimerEvent: {}
+[11.924183] (-) TimerEvent: {}
+[12.025447] (-) TimerEvent: {}
+[12.126727] (-) TimerEvent: {}
+[12.227993] (-) TimerEvent: {}
+[12.329270] (-) TimerEvent: {}
+[12.430573] (-) TimerEvent: {}
+[12.531838] (-) TimerEvent: {}
+[12.633098] (-) TimerEvent: {}
+[12.734364] (-) TimerEvent: {}
+[12.835708] (-) TimerEvent: {}
+[12.936982] (-) TimerEvent: {}
+[13.038216] (-) TimerEvent: {}
+[13.139520] (-) TimerEvent: {}
+[13.240770] (-) TimerEvent: {}
+[13.342123] (-) TimerEvent: {}
+[13.443388] (-) TimerEvent: {}
+[13.544674] (-) TimerEvent: {}
+[13.645942] (-) TimerEvent: {}
+[13.747186] (-) TimerEvent: {}
+[13.848414] (-) TimerEvent: {}
+[13.949880] (-) TimerEvent: {}
+[14.051135] (-) TimerEvent: {}
+[14.152389] (-) TimerEvent: {}
+[14.253717] (-) TimerEvent: {}
+[14.354992] (-) TimerEvent: {}
+[14.456260] (-) TimerEvent: {}
+[14.557556] (-) TimerEvent: {}
+[14.658787] (-) TimerEvent: {}
+[14.760639] (-) TimerEvent: {}
+[14.862595] (-) TimerEvent: {}
+[14.963858] (-) TimerEvent: {}
+[15.065125] (-) TimerEvent: {}
+[15.166363] (-) TimerEvent: {}
+[15.267630] (-) TimerEvent: {}
+[15.368820] (-) TimerEvent: {}
+[15.393287] (rover_sw_pwrtrain) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/rover_sw_pwrtrain.dir/src/slros_busmsg_conversion.cpp.o\x1b[0m\n'}
+[15.396859] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\"rover_sw_pwrtrain\\" -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include/rover_sw_pwrtrain -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DMODEL=rover_sw_pwrtrain -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=0 -DMT=0 -DROS2_PROJECT -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT -fpermissive -MD -MT CMakeFiles/rover_sw_pwrtrain.dir/src/slros_busmsg_conversion.cpp.o -MF CMakeFiles/rover_sw_pwrtrain.dir/src/slros_busmsg_conversion.cpp.o.d -o CMakeFiles/rover_sw_pwrtrain.dir/src/slros_busmsg_conversion.cpp.o -c /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/slros_busmsg_conversion.cpp\n'}
+[15.469149] (-) TimerEvent: {}
+[15.570331] (-) TimerEvent: {}
+[15.678729] (-) TimerEvent: {}
+[15.709123] (rover_sw_pwrtrain) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/rover_sw_pwrtrain.dir/src/vesc_uart.c.o\x1b[0m\n'}
+[15.713194] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/cc -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\\"rover_sw_pwrtrain\\" -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include/rover_sw_pwrtrain -I/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DMODEL=rover_sw_pwrtrain -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DTID01EQ=0 -DONESTEPFCN=1 -DTERMFCN=1 -DMULTI_INSTANCE_CODE=1 -DINTEGER_CODE=0 -DMT=0 -DROS2_PROJECT -DSTACK_SIZE=64 -D__MW_TARGET_USE_HARDWARE_RESOURCES_H__ -DRT=RT -fpermissive -std=gnu99 -MD -MT CMakeFiles/rover_sw_pwrtrain.dir/src/vesc_uart.c.o -MF CMakeFiles/rover_sw_pwrtrain.dir/src/vesc_uart.c.o.d -o CMakeFiles/rover_sw_pwrtrain.dir/src/vesc_uart.c.o -c /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/vesc_uart.c\n'}
+[15.724241] (rover_sw_pwrtrain) StderrLine: {'line': b'\x1b[01m\x1b[Kcc1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcommand-line option \xe2\x80\x98\x1b[01m\x1b[K-fpermissive\x1b[m\x1b[K\xe2\x80\x99 is valid for C++/ObjC++ but not for C\n'}
+[15.779048] (-) TimerEvent: {}
+[15.838554] (rover_sw_pwrtrain) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/vesc_uart.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvesc_send_payload_fd\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.839414] (rover_sw_pwrtrain) StderrLine: {'line': b'\x1b[01m\x1b[K/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain/src/vesc_uart.c:109:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison is always false due to limited range of data type [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits\x07-Wtype-limits\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[15.839716] (rover_sw_pwrtrain) StderrLine: {'line': b'  109 |     if (len \x1b[01;35m\x1b[K>\x1b[m\x1b[K 256) {\n'}
+[15.839935] (rover_sw_pwrtrain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[15.879358] (-) TimerEvent: {}
+[15.980672] (-) TimerEvent: {}
+[16.082091] (-) TimerEvent: {}
+[16.183397] (-) TimerEvent: {}
+[16.284646] (-) TimerEvent: {}
+[16.385906] (-) TimerEvent: {}
+[16.487144] (-) TimerEvent: {}
+[16.588421] (-) TimerEvent: {}
+[16.689741] (-) TimerEvent: {}
+[16.791014] (-) TimerEvent: {}
+[16.892328] (-) TimerEvent: {}
+[16.993747] (-) TimerEvent: {}
+[17.095078] (-) TimerEvent: {}
+[17.196394] (-) TimerEvent: {}
+[17.298252] (-) TimerEvent: {}
+[17.399543] (-) TimerEvent: {}
+[17.500774] (-) TimerEvent: {}
+[17.602002] (-) TimerEvent: {}
+[17.703248] (-) TimerEvent: {}
+[17.804495] (-) TimerEvent: {}
+[17.905851] (-) TimerEvent: {}
+[18.007416] (-) TimerEvent: {}
+[18.109171] (-) TimerEvent: {}
+[18.210865] (-) TimerEvent: {}
+[18.312572] (-) TimerEvent: {}
+[18.414439] (-) TimerEvent: {}
+[18.516145] (-) TimerEvent: {}
+[18.618111] (-) TimerEvent: {}
+[18.719813] (-) TimerEvent: {}
+[18.821926] (-) TimerEvent: {}
+[18.923614] (-) TimerEvent: {}
+[19.025432] (-) TimerEvent: {}
+[19.127119] (-) TimerEvent: {}
+[19.228808] (-) TimerEvent: {}
+[19.330531] (-) TimerEvent: {}
+[19.432229] (-) TimerEvent: {}
+[19.534083] (-) TimerEvent: {}
+[19.635821] (-) TimerEvent: {}
+[19.737708] (-) TimerEvent: {}
+[19.839411] (-) TimerEvent: {}
+[19.941240] (-) TimerEvent: {}
+[20.042839] (-) TimerEvent: {}
+[20.144508] (-) TimerEvent: {}
+[20.246297] (-) TimerEvent: {}
+[20.348032] (-) TimerEvent: {}
+[20.449719] (-) TimerEvent: {}
+[20.551468] (-) TimerEvent: {}
+[20.653225] (-) TimerEvent: {}
+[20.754769] (-) TimerEvent: {}
+[20.856389] (-) TimerEvent: {}
+[20.958115] (-) TimerEvent: {}
+[21.060111] (-) TimerEvent: {}
+[21.162522] (-) TimerEvent: {}
+[21.264171] (-) TimerEvent: {}
+[21.365825] (-) TimerEvent: {}
+[21.468241] (-) TimerEvent: {}
+[21.569861] (-) TimerEvent: {}
+[21.671393] (-) TimerEvent: {}
+[21.773069] (-) TimerEvent: {}
+[21.874706] (-) TimerEvent: {}
+[21.976353] (-) TimerEvent: {}
+[22.084577] (-) TimerEvent: {}
+[22.187072] (-) TimerEvent: {}
+[22.288786] (-) TimerEvent: {}
+[22.390470] (-) TimerEvent: {}
+[22.492066] (-) TimerEvent: {}
+[22.593876] (-) TimerEvent: {}
+[22.695545] (-) TimerEvent: {}
+[22.797248] (-) TimerEvent: {}
+[22.898904] (-) TimerEvent: {}
+[23.000512] (-) TimerEvent: {}
+[23.102131] (-) TimerEvent: {}
+[23.203760] (-) TimerEvent: {}
+[23.305394] (-) TimerEvent: {}
+[23.407031] (-) TimerEvent: {}
+[23.508747] (-) TimerEvent: {}
+[23.610364] (-) TimerEvent: {}
+[23.712003] (-) TimerEvent: {}
+[23.813640] (-) TimerEvent: {}
+[23.915433] (-) TimerEvent: {}
+[24.016855] (-) TimerEvent: {}
+[24.118149] (-) TimerEvent: {}
+[24.219432] (-) TimerEvent: {}
+[24.320665] (-) TimerEvent: {}
+[24.421940] (-) TimerEvent: {}
+[24.523166] (-) TimerEvent: {}
+[24.624357] (-) TimerEvent: {}
+[24.725616] (-) TimerEvent: {}
+[24.826816] (-) TimerEvent: {}
+[24.928019] (-) TimerEvent: {}
+[25.029261] (-) TimerEvent: {}
+[25.130505] (-) TimerEvent: {}
+[25.231759] (-) TimerEvent: {}
+[25.333356] (-) TimerEvent: {}
+[25.434620] (-) TimerEvent: {}
+[25.535885] (-) TimerEvent: {}
+[25.637156] (-) TimerEvent: {}
+[25.741662] (-) TimerEvent: {}
+[25.842877] (-) TimerEvent: {}
+[25.944107] (-) TimerEvent: {}
+[26.045364] (-) TimerEvent: {}
+[26.147037] (-) TimerEvent: {}
+[26.248274] (-) TimerEvent: {}
+[26.349535] (-) TimerEvent: {}
+[26.450693] (-) TimerEvent: {}
+[26.551837] (-) TimerEvent: {}
+[26.653038] (-) TimerEvent: {}
+[26.754217] (-) TimerEvent: {}
+[26.855415] (-) TimerEvent: {}
+[26.956564] (-) TimerEvent: {}
+[27.057740] (-) TimerEvent: {}
+[27.158902] (-) TimerEvent: {}
+[27.260052] (-) TimerEvent: {}
+[27.361266] (-) TimerEvent: {}
+[27.462409] (-) TimerEvent: {}
+[27.563573] (-) TimerEvent: {}
+[27.664742] (-) TimerEvent: {}
+[27.765923] (-) TimerEvent: {}
+[27.867072] (-) TimerEvent: {}
+[27.968214] (-) TimerEvent: {}
+[28.069398] (-) TimerEvent: {}
+[28.170583] (-) TimerEvent: {}
+[28.271767] (-) TimerEvent: {}
+[28.372985] (-) TimerEvent: {}
+[28.474133] (-) TimerEvent: {}
+[28.575284] (-) TimerEvent: {}
+[28.676419] (-) TimerEvent: {}
+[28.777626] (-) TimerEvent: {}
+[28.878763] (-) TimerEvent: {}
+[28.979896] (-) TimerEvent: {}
+[29.081054] (-) TimerEvent: {}
+[29.182216] (-) TimerEvent: {}
+[29.283388] (-) TimerEvent: {}
+[29.384618] (-) TimerEvent: {}
+[29.485804] (-) TimerEvent: {}
+[29.586967] (-) TimerEvent: {}
+[29.688134] (-) TimerEvent: {}
+[29.789386] (-) TimerEvent: {}
+[29.890569] (-) TimerEvent: {}
+[29.991709] (-) TimerEvent: {}
+[30.092850] (-) TimerEvent: {}
+[30.194141] (-) TimerEvent: {}
+[30.295425] (-) TimerEvent: {}
+[30.396572] (-) TimerEvent: {}
+[30.497785] (-) TimerEvent: {}
+[30.598948] (-) TimerEvent: {}
+[30.700174] (-) TimerEvent: {}
+[30.801469] (-) TimerEvent: {}
+[30.902660] (-) TimerEvent: {}
+[31.003842] (-) TimerEvent: {}
+[31.105110] (-) TimerEvent: {}
+[31.206233] (-) TimerEvent: {}
+[31.307373] (-) TimerEvent: {}
+[31.408484] (-) TimerEvent: {}
+[31.509614] (-) TimerEvent: {}
+[31.610748] (-) TimerEvent: {}
+[31.711859] (-) TimerEvent: {}
+[31.813032] (-) TimerEvent: {}
+[31.914170] (-) TimerEvent: {}
+[32.015315] (-) TimerEvent: {}
+[32.116464] (-) TimerEvent: {}
+[32.217641] (-) TimerEvent: {}
+[32.318783] (-) TimerEvent: {}
+[32.419905] (-) TimerEvent: {}
+[32.521110] (-) TimerEvent: {}
+[32.622253] (-) TimerEvent: {}
+[32.723396] (-) TimerEvent: {}
+[32.824517] (-) TimerEvent: {}
+[32.925700] (-) TimerEvent: {}
+[33.026905] (-) TimerEvent: {}
+[33.128052] (-) TimerEvent: {}
+[33.229171] (-) TimerEvent: {}
+[33.330327] (-) TimerEvent: {}
+[33.431418] (-) TimerEvent: {}
+[33.532532] (-) TimerEvent: {}
+[33.633746] (-) TimerEvent: {}
+[33.734871] (-) TimerEvent: {}
+[33.835989] (-) TimerEvent: {}
+[33.937123] (-) TimerEvent: {}
+[34.038225] (-) TimerEvent: {}
+[34.139380] (-) TimerEvent: {}
+[34.240537] (-) TimerEvent: {}
+[34.341664] (-) TimerEvent: {}
+[34.442766] (-) TimerEvent: {}
+[34.543860] (-) TimerEvent: {}
+[34.645039] (-) TimerEvent: {}
+[34.746171] (-) TimerEvent: {}
+[34.847261] (-) TimerEvent: {}
+[34.948396] (-) TimerEvent: {}
+[35.049556] (-) TimerEvent: {}
+[35.150680] (-) TimerEvent: {}
+[35.251833] (-) TimerEvent: {}
+[35.353014] (-) TimerEvent: {}
+[35.454155] (-) TimerEvent: {}
+[35.555322] (-) TimerEvent: {}
+[35.656507] (-) TimerEvent: {}
+[35.757714] (-) TimerEvent: {}
+[35.858856] (-) TimerEvent: {}
+[35.959996] (-) TimerEvent: {}
+[36.061170] (-) TimerEvent: {}
+[36.162303] (-) TimerEvent: {}
+[36.263453] (-) TimerEvent: {}
+[36.364590] (-) TimerEvent: {}
+[36.465785] (-) TimerEvent: {}
+[36.566926] (-) TimerEvent: {}
+[36.668077] (-) TimerEvent: {}
+[36.769173] (-) TimerEvent: {}
+[36.870304] (-) TimerEvent: {}
+[36.971377] (-) TimerEvent: {}
+[37.072457] (-) TimerEvent: {}
+[37.173612] (-) TimerEvent: {}
+[37.274715] (-) TimerEvent: {}
+[37.375841] (-) TimerEvent: {}
+[37.476998] (-) TimerEvent: {}
+[37.578167] (-) TimerEvent: {}
+[37.679265] (-) TimerEvent: {}
+[37.780410] (-) TimerEvent: {}
+[37.881645] (-) TimerEvent: {}
+[37.982747] (-) TimerEvent: {}
+[38.083840] (-) TimerEvent: {}
+[38.184990] (-) TimerEvent: {}
+[38.286119] (-) TimerEvent: {}
+[38.387238] (-) TimerEvent: {}
+[38.488369] (-) TimerEvent: {}
+[38.589584] (-) TimerEvent: {}
+[38.690728] (-) TimerEvent: {}
+[38.791874] (-) TimerEvent: {}
+[38.893067] (-) TimerEvent: {}
+[38.994222] (-) TimerEvent: {}
+[39.095397] (-) TimerEvent: {}
+[39.196567] (-) TimerEvent: {}
+[39.297797] (-) TimerEvent: {}
+[39.398961] (-) TimerEvent: {}
+[39.500099] (-) TimerEvent: {}
+[39.601174] (-) TimerEvent: {}
+[39.702333] (-) TimerEvent: {}
+[39.803447] (-) TimerEvent: {}
+[39.904607] (-) TimerEvent: {}
+[40.005772] (-) TimerEvent: {}
+[40.106907] (-) TimerEvent: {}
+[40.208036] (-) TimerEvent: {}
+[40.309179] (-) TimerEvent: {}
+[40.410300] (-) TimerEvent: {}
+[40.511449] (-) TimerEvent: {}
+[40.612599] (-) TimerEvent: {}
+[40.713785] (-) TimerEvent: {}
+[40.814943] (-) TimerEvent: {}
+[40.916178] (-) TimerEvent: {}
+[41.017387] (-) TimerEvent: {}
+[41.118555] (-) TimerEvent: {}
+[41.219765] (-) TimerEvent: {}
+[41.320959] (-) TimerEvent: {}
+[41.422120] (-) TimerEvent: {}
+[41.523282] (-) TimerEvent: {}
+[41.624436] (-) TimerEvent: {}
+[41.725649] (-) TimerEvent: {}
+[41.826794] (-) TimerEvent: {}
+[41.927971] (-) TimerEvent: {}
+[42.029145] (-) TimerEvent: {}
+[42.130266] (-) TimerEvent: {}
+[42.231408] (-) TimerEvent: {}
+[42.332554] (-) TimerEvent: {}
+[42.433701] (-) TimerEvent: {}
+[42.534796] (-) TimerEvent: {}
+[42.636019] (-) TimerEvent: {}
+[42.737172] (-) TimerEvent: {}
+[42.838343] (-) TimerEvent: {}
+[42.939510] (-) TimerEvent: {}
+[43.040674] (-) TimerEvent: {}
+[43.141877] (-) TimerEvent: {}
+[43.243030] (-) TimerEvent: {}
+[43.344216] (-) TimerEvent: {}
+[43.445348] (-) TimerEvent: {}
+[43.546470] (-) TimerEvent: {}
+[43.647630] (-) TimerEvent: {}
+[43.748824] (-) TimerEvent: {}
+[43.850029] (-) TimerEvent: {}
+[43.951185] (-) TimerEvent: {}
+[44.052366] (-) TimerEvent: {}
+[44.153622] (-) TimerEvent: {}
+[44.254812] (-) TimerEvent: {}
+[44.356028] (-) TimerEvent: {}
+[44.457236] (-) TimerEvent: {}
+[44.558415] (-) TimerEvent: {}
+[44.659638] (-) TimerEvent: {}
+[44.760834] (-) TimerEvent: {}
+[44.862058] (-) TimerEvent: {}
+[44.963172] (-) TimerEvent: {}
+[45.064342] (-) TimerEvent: {}
+[45.165531] (-) TimerEvent: {}
+[45.266693] (-) TimerEvent: {}
+[45.367879] (-) TimerEvent: {}
+[45.469085] (-) TimerEvent: {}
+[45.570227] (-) TimerEvent: {}
+[45.671387] (-) TimerEvent: {}
+[45.772493] (-) TimerEvent: {}
+[45.873690] (-) TimerEvent: {}
+[45.974854] (-) TimerEvent: {}
+[46.076014] (-) TimerEvent: {}
+[46.177179] (-) TimerEvent: {}
+[46.278350] (-) TimerEvent: {}
+[46.379450] (-) TimerEvent: {}
+[46.480625] (-) TimerEvent: {}
+[46.581785] (-) TimerEvent: {}
+[46.682889] (-) TimerEvent: {}
+[46.784002] (-) TimerEvent: {}
+[46.885110] (-) TimerEvent: {}
+[46.986202] (-) TimerEvent: {}
+[47.067935] (rover_sw_pwrtrain) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rover_sw_pwrtrain\x1b[0m\n'}
+[47.070469] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_link_script CMakeFiles/rover_sw_pwrtrain.dir/link.txt --verbose=1\n'}
+[47.086364] (-) TimerEvent: {}
+[47.090852] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/rover_sw_pwrtrain.dir/src/main.cpp.o CMakeFiles/rover_sw_pwrtrain.dir/src/ros2nodeinterface.cpp.o CMakeFiles/rover_sw_pwrtrain.dir/src/rover_sw_pwrtrain.cpp.o CMakeFiles/rover_sw_pwrtrain.dir/src/slros2_initialize.cpp.o CMakeFiles/rover_sw_pwrtrain.dir/src/slros_busmsg_conversion.cpp.o CMakeFiles/rover_sw_pwrtrain.dir/src/vesc_uart.c.o -o rover_sw_pwrtrain  -Wl,-rpath,/home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib:/opt/ros/humble/lib /opt/ros/humble/lib/librclcpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so -ldl /opt/ros/humble/lib/liblibstatistics_collector.so /opt/ros/humble/lib/librcl.so /opt/ros/humble/lib/librmw_implementation.so /opt/ros/humble/lib/libament_index_cpp.so /opt/ros/humble/lib/librcl_logging_spdlog.so /opt/ros/humble/lib/librcl_logging_interface.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so /opt/ros/humble/lib/librcl_yaml_param_parser.so /opt/ros/humble/lib/libyaml.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_py.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libtracetools.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libfastcdr.so.1.0.24 /opt/ros/humble/lib/librmw.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so /opt/ros/humble/lib/librosidl_typesupport_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so /opt/ros/humble/lib/librosidl_typesupport_c.so /opt/ros/humble/lib/librcpputils.so /opt/ros/humble/lib/librosidl_runtime_c.so /opt/ros/humble/lib/librcutils.so -ldl /usr/lib/aarch64-linux-gnu/libpython3.10.so \n'}
+[47.186671] (-) TimerEvent: {}
+[47.287863] (-) TimerEvent: {}
+[47.389040] (-) TimerEvent: {}
+[47.490186] (-) TimerEvent: {}
+[47.546412] (rover_sw_pwrtrain) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'\n"}
+[47.571300] (rover_sw_pwrtrain) StdoutLine: {'line': b'[100%] Built target rover_sw_pwrtrain\n'}
+[47.574434] (rover_sw_pwrtrain) StdoutLine: {'line': b"gmake[1]: Leaving directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'\n"}
+[47.574964] (rover_sw_pwrtrain) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain/CMakeFiles 0\n'}
+[47.590312] (-) TimerEvent: {}
+[47.606044] (rover_sw_pwrtrain) CommandEnded: {'returncode': 0}
+[47.608595] (rover_sw_pwrtrain) JobProgress: {'identifier': 'rover_sw_pwrtrain', 'progress': 'install'}
+[47.635896] (rover_sw_pwrtrain) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'], 'cwd': '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'abhijeet'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/abhijeet'), ('OLDPWD', '/home/abhijeet/home/abhijeet/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2258'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a9292841b9fa06ab9dde259f6915275b'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'abhijeet'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'abhijeet'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abhijeet-desktop:@/tmp/.ICE-unix/2258,unix/abhijeet-desktop:/tmp/.ICE-unix/2258'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/20ddc885_8eb6_488f_888c_eb3cd4933d37'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a9292841b9fa06ab9dde259f6915275b'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/abhijeet/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test:/opt/ros/humble')]), 'shell': False}
+[47.661364] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[47.662152] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib/rover_sw_pwrtrain/rover_sw_pwrtrain\n'}
+[47.665513] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/ament_index/resource_index/package_run_dependencies/rover_sw_pwrtrain\n'}
+[47.666099] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/ament_index/resource_index/parent_prefix_path/rover_sw_pwrtrain\n'}
+[47.666734] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/ament_prefix_path.sh\n'}
+[47.667136] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/ament_prefix_path.dsv\n'}
+[47.667537] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/path.sh\n'}
+[47.667933] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/path.dsv\n'}
+[47.668333] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.bash\n'}
+[47.668780] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.sh\n'}
+[47.669460] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.zsh\n'}
+[47.669845] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.dsv\n'}
+[47.670223] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.dsv\n'}
+[47.670736] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/ament_index/resource_index/packages/rover_sw_pwrtrain\n'}
+[47.671262] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[47.671689] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/cmake/rover_sw_pwrtrainConfig.cmake\n'}
+[47.671988] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/cmake/rover_sw_pwrtrainConfig-version.cmake\n'}
+[47.672361] (rover_sw_pwrtrain) StdoutLine: {'line': b'-- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.xml\n'}
+[47.678536] (rover_sw_pwrtrain) CommandEnded: {'returncode': 0}
+[47.690753] (-) TimerEvent: {}
+[47.751070] (rover_sw_pwrtrain) JobEnded: {'identifier': 'rover_sw_pwrtrain', 'rc': 0}
+[47.753403] (-) EventReactorShutdown: {}

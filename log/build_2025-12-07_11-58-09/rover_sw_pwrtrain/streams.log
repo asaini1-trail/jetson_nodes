@@ -1,0 +1,38 @@
+[0.020s] Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain -- -j6 -l6
+[0.042s] /usr/bin/cmake -S/home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain -B/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain --check-build-system CMakeFiles/Makefile.cmake 0
+[0.061s] /usr/bin/cmake -E cmake_progress_start /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain/CMakeFiles /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain//CMakeFiles/progress.marks
+[0.074s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[0.077s] gmake[1]: Entering directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'
+[0.077s] /usr/bin/gmake  -f CMakeFiles/rover_sw_pwrtrain.dir/build.make CMakeFiles/rover_sw_pwrtrain.dir/depend
+[0.088s] gmake[2]: Entering directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'
+[0.089s] cd /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain/CMakeFiles/rover_sw_pwrtrain.dir/DependInfo.cmake --color=
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target rover_sw_pwrtrain[0m
+[0.129s] gmake[2]: Leaving directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'
+[0.129s] /usr/bin/gmake  -f CMakeFiles/rover_sw_pwrtrain.dir/build.make CMakeFiles/rover_sw_pwrtrain.dir/build
+[0.146s] gmake[2]: Entering directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'
+[0.146s] gmake[2]: Nothing to be done for 'CMakeFiles/rover_sw_pwrtrain.dir/build'.
+[0.146s] gmake[2]: Leaving directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'
+[0.162s] [100%] Built target rover_sw_pwrtrain
+[0.164s] gmake[1]: Leaving directory '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain'
+[0.165s] /usr/bin/cmake -E cmake_progress_start /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain/CMakeFiles 0
+[0.187s] Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain -- -j6 -l6
+[0.211s] Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain
+[0.230s] -- Install configuration: "Release"
+[0.230s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/lib/rover_sw_pwrtrain/rover_sw_pwrtrain
+[0.230s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/ament_index/resource_index/package_run_dependencies/rover_sw_pwrtrain
+[0.231s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/ament_index/resource_index/parent_prefix_path/rover_sw_pwrtrain
+[0.231s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/ament_prefix_path.sh
+[0.231s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/ament_prefix_path.dsv
+[0.231s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/path.sh
+[0.232s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/environment/path.dsv
+[0.232s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.bash
+[0.233s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.sh
+[0.233s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.zsh
+[0.233s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/local_setup.dsv
+[0.233s] -- Installing: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.dsv
+[0.234s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/ament_index/resource_index/packages/rover_sw_pwrtrain
+[0.234s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.234s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/cmake/rover_sw_pwrtrainConfig.cmake
+[0.234s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/cmake/rover_sw_pwrtrainConfig-version.cmake
+[0.234s] -- Up-to-date: /home/abhijeet/home/abhijeet/ros2_ws/src/install/rover_sw_pwrtrain/share/rover_sw_pwrtrain/package.xml
+[0.238s] Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/rover_sw_pwrtrain
