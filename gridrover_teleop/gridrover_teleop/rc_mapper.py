@@ -190,7 +190,7 @@ class RCMapper(Node):
             dpad_down_pressed = bool(msg.buttons[12]) if len(msg.buttons) > 12 else False
         
         # Handle incremental changes on button press (edge detection)
-        # Only allow D-pad control when cycling is disabled (led_state == 1500)
+        # Only allow D-pad control when cycling is disabled (led_state has any value)
         if not self.cycling_enabled:
             value_changed = False
             if dpad_up_pressed and not self.prev_dpad_up:
@@ -214,10 +214,14 @@ class RCMapper(Node):
             self.prev_dpad_down = dpad_down_pressed
             
             # Always publish current pulse width value when D-pad control is active
-            # This maintains the value and prevents fluctuations
+            # This maintains the value and prevents fluctuations from cycling callback
             pw_msg = Int32()
             pw_msg.data = int(self.current_pulse_width)
             self.pub_pulse_width.publish(pw_msg)
+            
+            # Log if D-pad is being pressed but not changing (for debugging)
+            if (dpad_up_pressed or dpad_down_pressed) and not value_changed:
+                self.get_logger().debug(f'D-pad pressed but value unchanged (cycling_enabled={self.cycling_enabled}, current={self.current_pulse_width:.0f}ms)')
         else:
             # Update previous states even when cycling (to prevent false triggers when cycling stops)
             self.prev_dpad_up = dpad_up_pressed
@@ -260,7 +264,7 @@ class RCMapper(Node):
     def cycling_callback(self):
         """Timer callback to cycle headlamp PWM smoothly - 500-1500ms when led_state not available"""
         if not self.cycling_enabled:
-            return  # Don't cycle if disabled
+            return  # Don't cycle if disabled - D-pad control is active
         
         # Update target based on direction (500-1500ms range when led_state not available)
         if self.cycling_direction > 0:
