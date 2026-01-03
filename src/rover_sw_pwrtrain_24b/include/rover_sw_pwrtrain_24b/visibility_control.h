@@ -28,5 +28,5 @@
   #define ROVER_SW_PWRTRAIN_24B_PUBLIC_TYPE
 #endif
 #endif  // ROVER_SW_PWRTRAIN_24B__VISIBILITY_CONTROL_H_
-// Generated 22-Dec-2025 21:21:54
+// Generated 02-Jan-2026 20:21:55
  

@@ -24,13 +24,13 @@ static int g_fd_right = -1;
 
 /* CAN IDs of slave VESCs on the LEFT side */
 static const uint8_t VESC_CAN_LEFT_SLAVES[] = {
-    10,  /* example: left rear VESC CAN ID */
+    85,  /* example: left rear VESC CAN ID */
     /* add more left-side CAN IDs here if needed */
 };
 
 /* CAN IDs of slave VESCs on the RIGHT side */
 static const uint8_t VESC_CAN_RIGHT_SLAVES[] = {
-    85,  /* example: right rear VESC CAN ID */
+    104,  /* example: right rear VESC CAN ID */
     /* add more right-side CAN IDs here if needed */
 };
 

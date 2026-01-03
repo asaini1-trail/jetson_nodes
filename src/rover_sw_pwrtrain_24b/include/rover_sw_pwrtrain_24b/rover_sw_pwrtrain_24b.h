@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.39
+ * Model version              : 1.45
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Mon Dec 22 21:21:49 2025
+ * C++ source code generated on : Fri Jan  2 20:21:50 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -175,14 +175,14 @@ extern "C"
 /* user code (top of header file) */
 #include "vesc_uart.h"
 
-/* Block signals for system '<S35>/Enabled Subsystem' */
+/* Block signals for system '<S47>/Enabled Subsystem' */
 struct B_EnabledSubsystem_rover_sw_p_T {
-  SL_Bus_std_msgs_Float32 In1;         /* '<S41>/In1' */
+  SL_Bus_std_msgs_Float32 In1;         /* '<S53>/In1' */
 };
 
-/* Block signals for system '<S39>/Enabled Subsystem' */
+/* Block signals for system '<S51>/Enabled Subsystem' */
 struct B_EnabledSubsystem_rover_sw_e_T {
-  SL_Bus_std_msgs_Bool In1;            /* '<S45>/In1' */
+  SL_Bus_std_msgs_Bool In1;            /* '<S57>/In1' */
 };
 
 /* Block signals (default storage) */
@@ -199,8 +199,8 @@ struct B_rover_sw_pwrtrain_24b_T {
   char_T b_zeroDelimTopic_cx[27];
   char_T b_zeroDelimTopic_b[27];
   char_T b_zeroDelimTopic_p[27];
-  real_T Integrator[3];                /* '<S24>/Integrator' */
-  real_T MATLABSystem[3];              /* '<S24>/MATLAB System' */
+  real_T Integrator[3];                /* '<S36>/Integrator' */
+  real_T MATLABSystem[3];              /* '<S36>/MATLAB System' */
   char_T b_zeroDelimTopic_cv[19];
   char_T b_zeroDelimTopic_f[19];
   char_T b_zeroDelimTopic_g[18];
@@ -213,8 +213,8 @@ struct B_rover_sw_pwrtrain_24b_T {
   real_T waypoints_l[2];
   real_T waypoints_j[2];
   real_T refPt[2];
-  real_T Product;                      /* '<S25>/Product' */
-  real_T Product1;                     /* '<S25>/Product1' */
+  real_T Product;                      /* '<S37>/Product' */
+  real_T Product1;                     /* '<S37>/Product1' */
   real_T x;
   real_T y;
   real_T i;
@@ -227,76 +227,75 @@ struct B_rover_sw_pwrtrain_24b_T {
   real_T scale;
   real_T absxk;
   real_T t;
-  int32_T vesc_send_duty_left;         /* '<S23>/vesc_send_duty_left' */
-  int32_T vesc_send_duty_right;        /* '<S23>/vesc_send_duty_right' */
   int32_T targetX;
-  boolean_T SourceBlock_o1;            /* '<S40>/SourceBlock' */
-  boolean_T SourceBlock_o1_n;          /* '<S39>/SourceBlock' */
-  boolean_T SourceBlock_o1_l;          /* '<S38>/SourceBlock' */
-  boolean_T SourceBlock_o1_m;          /* '<S37>/SourceBlock' */
-  boolean_T SourceBlock_o1_nc;         /* '<S36>/SourceBlock' */
-  boolean_T SourceBlock_o1_mk;         /* '<S35>/SourceBlock' */
-  B_EnabledSubsystem_rover_sw_e_T EnabledSubsystem_b;/* '<S40>/Enabled Subsystem' */
-  B_EnabledSubsystem_rover_sw_e_T EnabledSubsystem_g;/* '<S39>/Enabled Subsystem' */
-  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem_p4;/* '<S38>/Enabled Subsystem' */
-  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem_p;/* '<S37>/Enabled Subsystem' */
-  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem_o;/* '<S36>/Enabled Subsystem' */
-  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem;/* '<S35>/Enabled Subsystem' */
+  int32_T i_l;
+  boolean_T SourceBlock_o1;            /* '<S52>/SourceBlock' */
+  boolean_T SourceBlock_o1_n;          /* '<S51>/SourceBlock' */
+  boolean_T SourceBlock_o1_l;          /* '<S50>/SourceBlock' */
+  boolean_T SourceBlock_o1_m;          /* '<S49>/SourceBlock' */
+  boolean_T SourceBlock_o1_nc;         /* '<S48>/SourceBlock' */
+  boolean_T SourceBlock_o1_mk;         /* '<S47>/SourceBlock' */
+  B_EnabledSubsystem_rover_sw_e_T EnabledSubsystem_b;/* '<S52>/Enabled Subsystem' */
+  B_EnabledSubsystem_rover_sw_e_T EnabledSubsystem_g;/* '<S51>/Enabled Subsystem' */
+  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem_p4;/* '<S50>/Enabled Subsystem' */
+  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem_p;/* '<S49>/Enabled Subsystem' */
+  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem_o;/* '<S48>/Enabled Subsystem' */
+  B_EnabledSubsystem_rover_sw_p_T EnabledSubsystem;/* '<S47>/Enabled Subsystem' */
 };
 
 /* Block states (default storage) for system '<Root>' */
 struct DW_rover_sw_pwrtrain_24b_T {
   nav_slalgs_internal_PurePursu_T obj; /* '<S6>/Pure Pursuit' */
-  robotics_slmobile_internal_bl_T obj_j;/* '<S24>/MATLAB System' */
-  ros_slros2_internal_block_Pub_T obj_m;/* '<S34>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_g;/* '<S33>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_f;/* '<S32>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_g4;/* '<S31>/SinkBlock' */
+  robotics_slmobile_internal_bl_T obj_j;/* '<S36>/MATLAB System' */
+  ros_slros2_internal_block_Pub_T obj_m;/* '<S46>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_g;/* '<S45>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_f;/* '<S44>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_g4;/* '<S43>/SinkBlock' */
   ros_slros2_internal_block_Pub_T obj_n;/* '<S18>/SinkBlock' */
   ros_slros2_internal_block_Pub_T obj_c;/* '<S17>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_p;/* '<S22>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_a;/* '<S21>/SinkBlock' */
-  ros_slros2_internal_block_Sub_T obj_cy;/* '<S40>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_mg;/* '<S39>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_fl;/* '<S38>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_h;/* '<S37>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_ng;/* '<S36>/SourceBlock' */
-  ros_slros2_internal_block_Sub_T obj_i;/* '<S35>/SourceBlock' */
-  real32_T PrevY;                      /* '<S23>/Rate Limiter' */
-  real32_T PrevY_l;                    /* '<S23>/Rate Limiter1' */
+  ros_slros2_internal_block_Pub_T obj_p;/* '<S28>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_a;/* '<S27>/SinkBlock' */
+  ros_slros2_internal_block_Sub_T obj_cy;/* '<S52>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_mg;/* '<S51>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_fl;/* '<S50>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_h;/* '<S49>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_ng;/* '<S48>/SourceBlock' */
+  ros_slros2_internal_block_Sub_T obj_i;/* '<S47>/SourceBlock' */
+  real32_T PrevY;                      /* '<S29>/Rate Limiter' */
+  real32_T PrevY_l;                    /* '<S29>/Rate Limiter1' */
   int32_T SFunction_DIMS2[2];          /* '<S7>/MATLAB Function1' */
   int8_T If_ActiveSubsystem;           /* '<S5>/If' */
-  boolean_T objisempty;                /* '<S40>/SourceBlock' */
-  boolean_T objisempty_l;              /* '<S39>/SourceBlock' */
-  boolean_T objisempty_f;              /* '<S38>/SourceBlock' */
-  boolean_T objisempty_e;              /* '<S37>/SourceBlock' */
-  boolean_T objisempty_ea;             /* '<S36>/SourceBlock' */
-  boolean_T objisempty_c;              /* '<S35>/SourceBlock' */
-  boolean_T objisempty_n;              /* '<S34>/SinkBlock' */
-  boolean_T objisempty_k;              /* '<S33>/SinkBlock' */
-  boolean_T objisempty_ks;             /* '<S32>/SinkBlock' */
-  boolean_T objisempty_k1;             /* '<S31>/SinkBlock' */
+  boolean_T objisempty;                /* '<S52>/SourceBlock' */
+  boolean_T objisempty_l;              /* '<S51>/SourceBlock' */
+  boolean_T objisempty_f;              /* '<S50>/SourceBlock' */
+  boolean_T objisempty_e;              /* '<S49>/SourceBlock' */
+  boolean_T objisempty_ea;             /* '<S48>/SourceBlock' */
+  boolean_T objisempty_c;              /* '<S47>/SourceBlock' */
+  boolean_T objisempty_n;              /* '<S46>/SinkBlock' */
+  boolean_T objisempty_k;              /* '<S45>/SinkBlock' */
+  boolean_T objisempty_ks;             /* '<S44>/SinkBlock' */
+  boolean_T objisempty_k1;             /* '<S43>/SinkBlock' */
   boolean_T objisempty_ek;             /* '<S6>/Pure Pursuit' */
-  boolean_T objisempty_o;              /* '<S24>/MATLAB System' */
+  boolean_T objisempty_o;              /* '<S36>/MATLAB System' */
   boolean_T objisempty_j;              /* '<S18>/SinkBlock' */
   boolean_T objisempty_jb;             /* '<S17>/SinkBlock' */
-  boolean_T objisempty_d;              /* '<S22>/SinkBlock' */
-  boolean_T objisempty_nh;             /* '<S21>/SinkBlock' */
+  boolean_T objisempty_d;              /* '<S28>/SinkBlock' */
+  boolean_T objisempty_nh;             /* '<S27>/SinkBlock' */
 };
 
 /* Continuous states (default storage) */
 struct X_rover_sw_pwrtrain_24b_T {
-  real_T Integrator_CSTATE[3];         /* '<S24>/Integrator' */
+  real_T Integrator_CSTATE[3];         /* '<S36>/Integrator' */
 };
 
 /* State derivatives (default storage) */
 struct XDot_rover_sw_pwrtrain_24b_T {
-  real_T Integrator_CSTATE[3];         /* '<S24>/Integrator' */
+  real_T Integrator_CSTATE[3];         /* '<S36>/Integrator' */
 };
 
 /* State disabled  */
 struct XDis_rover_sw_pwrtrain_24b_T {
-  boolean_T Integrator_CSTATE[3];      /* '<S24>/Integrator' */
+  boolean_T Integrator_CSTATE[3];      /* '<S36>/Integrator' */
 };
 
 /* Invariant block signals (default storage) */
@@ -320,7 +319,7 @@ struct ODE3_IntgData {
 /* Constant parameters with dynamic initialization (default storage) */
 struct ConstInitP_rover_sw_pwrtrain__T {
   /* Expression: WheelSpeedRange
-   * Referenced by: '<S24>/MATLAB System'
+   * Referenced by: '<S36>/MATLAB System'
    */
   real_T MATLABSystem_WheelSpeedRange[2];
 };
@@ -417,13 +416,13 @@ class rover_sw_pwrtrain_24b
   /* Block Continuous state disabled vector */
   XDis_rover_sw_pwrtrain_24b_T rover_sw_pwrtrain_24b_XDis;
 
-  /* private member function(s) for subsystem '<S35>/Enabled Subsystem'*/
+  /* private member function(s) for subsystem '<S47>/Enabled Subsystem'*/
   static void rover_sw__EnabledSubsystem_Init(B_EnabledSubsystem_rover_sw_p_T
     *localB);
   static void rover_sw_pwrtr_EnabledSubsystem(boolean_T rtu_Enable, const
     SL_Bus_std_msgs_Float32 *rtu_In1, B_EnabledSubsystem_rover_sw_p_T *localB);
 
-  /* private member function(s) for subsystem '<S39>/Enabled Subsystem'*/
+  /* private member function(s) for subsystem '<S51>/Enabled Subsystem'*/
   static void rover_s_EnabledSubsystem_p_Init(B_EnabledSubsystem_rover_sw_e_T
     *localB);
   static void rover_sw_pwr_EnabledSubsystem_g(boolean_T rtu_Enable, const
@@ -437,6 +436,8 @@ class rover_sw_pwrtrain_24b
   void rover_Publisher_setupImpl_mygou(const ros_slros2_internal_block_Pub_T
     *obj);
   void rover_Subscriber_setupImpl_mygo(const ros_slros2_internal_block_Sub_T
+    *obj);
+  void rover_s_Subscriber_setupImpl_my(const ros_slros2_internal_block_Sub_T
     *obj);
   void rover_sw_p_Subscriber_setupImpl(const ros_slros2_internal_block_Sub_T
     *obj);
@@ -453,8 +454,6 @@ class rover_sw_pwrtrain_24b
   void rove_Publisher_setupImpl_mygou5(const ros_slros2_internal_block_Pub_T
     *obj);
   void DifferentialDriveKinematics_set(robotics_slmobile_internal_bl_T *obj);
-  void rover_s_Subscriber_setupImpl_my(const ros_slros2_internal_block_Sub_T
-    *obj);
   void rover__Subscriber_setupImpl_myg(const ros_slros2_internal_block_Sub_T
     *obj);
   void rove_Subscriber_setupImpl_mygou(const ros_slros2_internal_block_Sub_T
@@ -486,20 +485,22 @@ extern volatile boolean_T runModel;
  * Block '<S3>/Constant' : Unused code path elimination
  * Block '<S3>/Constant1' : Unused code path elimination
  * Block '<S3>/Switch' : Unused code path elimination
- * Block '<S24>/Data Type Duplicate' : Unused code path elimination
+ * Block '<S36>/Data Type Duplicate' : Unused code path elimination
  * Block '<S6>/Display' : Unused code path elimination
  * Block '<S6>/Display1' : Unused code path elimination
  * Block '<S6>/Display2' : Unused code path elimination
- * Block '<S25>/Display' : Unused code path elimination
+ * Block '<S37>/Display' : Unused code path elimination
  * Block '<S13>/Data Type Conversion' : Eliminate redundant data type conversion
  * Block '<S13>/Data Type Conversion1' : Eliminate redundant data type conversion
  * Block '<S13>/Data Type Conversion2' : Eliminate redundant data type conversion
  * Block '<S13>/Data Type Conversion3' : Eliminate redundant data type conversion
  * Block '<S14>/Data Type Conversion1' : Eliminate redundant data type conversion
  * Block '<S14>/Data Type Conversion3' : Eliminate redundant data type conversion
- * Block '<S24>/Data Type Conversion' : Eliminate redundant data type conversion
- * Block '<S24>/Data Type Conversion1' : Eliminate redundant data type conversion
- * Block '<S24>/Reshape' : Reshape block reduction
+ * Block '<S29>/Data Type Conversion' : Eliminate redundant data type conversion
+ * Block '<S29>/Data Type Conversion2' : Eliminate redundant data type conversion
+ * Block '<S36>/Data Type Conversion' : Eliminate redundant data type conversion
+ * Block '<S36>/Data Type Conversion1' : Eliminate redundant data type conversion
+ * Block '<S36>/Reshape' : Reshape block reduction
  * Block '<S6>/Zero-Order Hold' : Eliminated since input and output rates are identical
  * Block '<S6>/Zero-Order Hold1' : Eliminated since input and output rates are identical
  * Block '<S8>/Data Type Conversion1' : Eliminate redundant data type conversion
@@ -541,33 +542,45 @@ extern volatile boolean_T runModel;
  * '<S16>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Blank Message2'
  * '<S17>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Publish1'
  * '<S18>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Publish2'
- * '<S19>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Blank Message1'
- * '<S20>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Blank Message2'
- * '<S21>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Publish1'
- * '<S22>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Publish2'
- * '<S23>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm'
- * '<S24>'  : 'rover_sw_pwrtrain_24b/path_following/Differential Drive Kinematic Model'
- * '<S25>'  : 'rover_sw_pwrtrain_24b/path_following/Zero-Velocity At Goal'
- * '<S26>'  : 'rover_sw_pwrtrain_24b/path_generation/MATLAB Function1'
- * '<S27>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message1'
- * '<S28>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message2'
- * '<S29>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message3'
- * '<S30>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message4'
- * '<S31>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish1'
- * '<S32>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish2'
- * '<S33>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish3'
- * '<S34>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish4'
- * '<S35>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe'
- * '<S36>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe1'
- * '<S37>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe2'
- * '<S38>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe3'
- * '<S39>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe4'
- * '<S40>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe5'
- * '<S41>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe/Enabled Subsystem'
- * '<S42>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe1/Enabled Subsystem'
- * '<S43>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe2/Enabled Subsystem'
- * '<S44>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe3/Enabled Subsystem'
- * '<S45>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe4/Enabled Subsystem'
- * '<S46>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe5/Enabled Subsystem'
+ * '<S19>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Subsystem1'
+ * '<S20>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Subsystem2'
+ * '<S21>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Subsystem1/Compare To Constant'
+ * '<S22>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Subsystem1/Compare To Constant1'
+ * '<S23>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Subsystem2/Compare To Constant'
+ * '<S24>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem/Subsystem2/Compare To Constant1'
+ * '<S25>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Blank Message1'
+ * '<S26>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Blank Message2'
+ * '<S27>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Publish1'
+ * '<S28>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/Publish2'
+ * '<S29>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm'
+ * '<S30>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm/Subsystem'
+ * '<S31>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm/Subsystem1'
+ * '<S32>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm/Subsystem/Compare To Constant'
+ * '<S33>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm/Subsystem/Compare To Constant1'
+ * '<S34>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm/Subsystem1/Compare To Constant'
+ * '<S35>'  : 'rover_sw_pwrtrain_24b/motor_controls/Subsystem1/vesc_comm/Subsystem1/Compare To Constant1'
+ * '<S36>'  : 'rover_sw_pwrtrain_24b/path_following/Differential Drive Kinematic Model'
+ * '<S37>'  : 'rover_sw_pwrtrain_24b/path_following/Zero-Velocity At Goal'
+ * '<S38>'  : 'rover_sw_pwrtrain_24b/path_generation/MATLAB Function1'
+ * '<S39>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message1'
+ * '<S40>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message2'
+ * '<S41>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message3'
+ * '<S42>'  : 'rover_sw_pwrtrain_24b/ros_publish/Blank Message4'
+ * '<S43>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish1'
+ * '<S44>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish2'
+ * '<S45>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish3'
+ * '<S46>'  : 'rover_sw_pwrtrain_24b/ros_publish/Publish4'
+ * '<S47>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe'
+ * '<S48>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe1'
+ * '<S49>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe2'
+ * '<S50>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe3'
+ * '<S51>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe4'
+ * '<S52>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe5'
+ * '<S53>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe/Enabled Subsystem'
+ * '<S54>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe1/Enabled Subsystem'
+ * '<S55>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe2/Enabled Subsystem'
+ * '<S56>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe3/Enabled Subsystem'
+ * '<S57>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe4/Enabled Subsystem'
+ * '<S58>'  : 'rover_sw_pwrtrain_24b/ros_subscribe/Subscribe5/Enabled Subsystem'
  */
 #endif                                 /* rover_sw_pwrtrain_24b_h_ */

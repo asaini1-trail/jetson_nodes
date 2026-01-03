@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.39
+ * Model version              : 1.45
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Mon Dec 22 21:21:49 2025
+ * C++ source code generated on : Fri Jan  2 20:21:50 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -37,7 +37,7 @@ const ConstB_rover_sw_pwrtrain_24b_T rover_sw_pwrtrain_24b_ConstB = {
 /* Constant parameters with dynamic initialization (default storage) */
 ConstInitP_rover_sw_pwrtrain__T rover_sw_pwrtrain_24_ConstInitP = {
   /* Expression: WheelSpeedRange
-   * Referenced by: '<S24>/MATLAB System'
+   * Referenced by: '<S36>/MATLAB System'
    */
   { 0.0, 0.0 }
 };

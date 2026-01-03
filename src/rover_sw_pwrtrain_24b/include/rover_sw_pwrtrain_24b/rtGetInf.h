@@ -1,14 +1,14 @@
 /*
- * rtGetNaN.h
+ * rtGetInf.h
  *
  * Home License - for personal use only.  Not for government, academic,
  * research, commercial, or other organizational use.
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.39
+ * Model version              : 1.45
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Mon Dec 22 21:21:49 2025
+ * C++ source code generated on : Fri Jan  2 20:21:50 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -17,8 +17,8 @@
  * Validation result: Not run
  */
 
-#ifndef rtGetNaN_h_
-#define rtGetNaN_h_
+#ifndef rtGetInf_h_
+#define rtGetInf_h_
 
 extern "C"
 {
@@ -35,12 +35,14 @@ extern "C"
 
 #endif
 
-  extern real_T rtGetNaN(void);
-  extern real32_T rtGetNaNF(void);
+  extern real_T rtGetInf(void);
+  extern real32_T rtGetInfF(void);
+  extern real_T rtGetMinusInf(void);
+  extern real32_T rtGetMinusInfF(void);
 
 #ifdef __cplusplus
 
 }                                      /* extern "C" */
 
 #endif
-#endif                                 /* rtGetNaN_h_ */
+#endif                                 /* rtGetInf_h_ */

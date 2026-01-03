@@ -1,5 +1,5 @@
 // Copyright 2022-2024 The MathWorks, Inc.
-// Generated 22-Dec-2025 21:21:52
+// Generated 02-Jan-2026 20:21:54
 #include "slros2_initialize.h"
 // rover_sw_pwrtrain_24b/motor_controls/Subsystem/Publish1
 SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_542;
