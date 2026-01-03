@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000770] (-) JobUnselected: {'identifier': 'gridrover_teleop'}
-[0.001071] (-) JobUnselected: {'identifier': 'ros_test'}
-[0.001208] (-) JobUnselected: {'identifier': 'rover_sw_pwrtrain'}
-[0.001560] (-) EventReactorShutdown: {}

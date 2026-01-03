@@ -1,6 +1,0 @@
-Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abhijeet/home/abhijeet/ros2_ws/src/ros_test -DCMAKE_INSTALL_PREFIX=/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test
-Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/abhijeet/home/abhijeet/ros2_ws/src/ros_test -DCMAKE_INSTALL_PREFIX=/home/abhijeet/home/abhijeet/ros2_ws/src/install/ros_test
-Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test -- -j4 -l4
-Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test -- -j4 -l4
-Invoking command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test
-Invoked command in '/home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/abhijeet/home/abhijeet/ros2_ws/src/build/ros_test
