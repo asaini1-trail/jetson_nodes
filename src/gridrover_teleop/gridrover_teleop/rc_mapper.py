@@ -10,17 +10,20 @@ class RCMapper(Node):
     def __init__(self):
         super().__init__('rc_mapper')
 
-        # Publishers:
-        #   cmd_throttle ∈ [-1, 1]
-        #   cmd_steering ∈ [-1, 1]
-        #   auto_mode_enable: 0 for manual, 1 for autonomy
-        #   inhibit_start: 0 for disabled, 1 for enabled
-        #   headlamp_pwm: 500-2500ms (from D-pad up/down)
-        self.pub_throttle = self.create_publisher(Float32, '/vesc/cmd_throttle', 10)
-        self.pub_steering = self.create_publisher(Float32, '/vesc/cmd_steering', 10)
-        self.pub_auto_mode = self.create_publisher(Bool, 'auto_mode_enable', 10)
-        self.pub_inhibit_start = self.create_publisher(Bool, 'inhibit_start', 10)
+        # Publishers for driving commands - using PS4 stick names for clarity
+        self.pub_throttle = self.create_publisher(Float32, '/ps4/left_stick_y', 10)  # Throttle (forward/backward)
+        self.pub_steering = self.create_publisher(Float32, '/ps4/right_stick_x', 10)  # Steering (left/right)
         self.pub_pulse_width = self.create_publisher(Int32, 'headlamp_pwm', 10)
+
+        # Individual button publishers - Only L1/L2/R1/R2 with toggle behavior
+        self.pub_btn_l1 = self.create_publisher(Bool, '/ps4/button_l1', 10)
+        self.pub_btn_r1 = self.create_publisher(Bool, '/ps4/button_r1', 10)
+        self.pub_btn_l2 = self.create_publisher(Bool, '/ps4/button_l2', 10)
+        self.pub_btn_r2 = self.create_publisher(Bool, '/ps4/button_r2', 10)
+
+        # D-pad incremental value publishers (Float32 -1 to 1)
+        self.pub_dpad_horizontal = self.create_publisher(Float32, '/ps4/dpad_horizontal', 10)
+        self.pub_dpad_vertical = self.create_publisher(Float32, '/ps4/dpad_vertical', 10)
 
         # Subscribe to PS4 controller via joy_node
         self.sub_joy = self.create_subscription(
@@ -42,15 +45,26 @@ class RCMapper(Node):
         # PS4 controller button indices: L1 = buttons[4], R1 = buttons[5]
         self.prev_l1_state = False
         self.prev_r1_state = False
-        
+        self.prev_l2_state = False
+        self.prev_r2_state = False
+
         # D-pad state tracking for incremental changes
         self.prev_dpad_up = False
         self.prev_dpad_down = False
-        
-        # Current toggle states
-        self.auto_mode_enabled = False  # 0 = manual, 1 = autonomy
-        self.inhibit_start_enabled = False  # 0 = disabled, 1 = enabled
-        
+        self.prev_dpad_left = False
+        self.prev_dpad_right = False
+
+        # Current toggle states for L1/L2/R1/R2 (0 or 1)
+        self.l1_toggle_state = 0
+        self.l2_toggle_state = 0
+        self.r1_toggle_state = 0
+        self.r2_toggle_state = 0
+
+        # D-pad incremental values (-1 to 1)
+        self.dpad_horizontal_value = 0.0  # Left (-1) to Right (1)
+        self.dpad_vertical_value = 0.0    # Down (-1) to Up (1)
+        self.dpad_increment = 0.1  # Amount to change per press
+
         # Pulse width state (500-2500ms, default center at 1500ms)
         # Changes by 500ms increments with each D-pad press
         self.current_pulse_width = 1500.0  # ms
@@ -80,6 +94,92 @@ class RCMapper(Node):
 
         self.get_logger().info('RC mapper node started.')
 
+    def publish_individual_buttons(self, msg: Joy):
+        """Publish selected buttons and axes as individual topics"""
+
+        # Helper function to safely get button value
+        def get_button(index):
+            return bool(msg.buttons[index]) if len(msg.buttons) > index else False
+
+        # Helper function to safely get axis value
+        def get_axis(index, default=0.0):
+            return msg.axes[index] if len(msg.axes) > index else default
+
+        # Handle L1/L2/R1/R2 with toggle behavior (0→1→0 on each press)
+        current_l1 = get_button(4)
+        current_r1 = get_button(5)
+        current_l2 = get_button(6)
+        current_r2 = get_button(7)
+
+        # Toggle L1 state on rising edge
+        if current_l1 and not self.prev_l1_state:
+            self.l1_toggle_state = 1 if self.l1_toggle_state == 0 else 0
+            self.get_logger().info(f'L1 toggled to {self.l1_toggle_state}')
+
+        # Toggle R1 state on rising edge
+        if current_r1 and not self.prev_r1_state:
+            self.r1_toggle_state = 1 if self.r1_toggle_state == 0 else 0
+            self.get_logger().info(f'R1 toggled to {self.r1_toggle_state}')
+
+        # Toggle L2 state on rising edge
+        if current_l2 and not self.prev_l2_state:
+            self.l2_toggle_state = 1 if self.l2_toggle_state == 0 else 0
+            self.get_logger().info(f'L2 toggled to {self.l2_toggle_state}')
+
+        # Toggle R2 state on rising edge
+        if current_r2 and not self.prev_r2_state:
+            self.r2_toggle_state = 1 if self.r2_toggle_state == 0 else 0
+            self.get_logger().info(f'R2 toggled to {self.r2_toggle_state}')
+
+        # Update previous states
+        self.prev_l1_state = current_l1
+        self.prev_r1_state = current_r1
+        self.prev_l2_state = current_l2
+        self.prev_r2_state = current_r2
+
+        # Publish shoulder buttons with toggle state
+        self.pub_btn_l1.publish(Bool(data=(self.l1_toggle_state == 1)))
+        self.pub_btn_r1.publish(Bool(data=(self.r1_toggle_state == 1)))
+        self.pub_btn_l2.publish(Bool(data=(self.l2_toggle_state == 1)))
+        self.pub_btn_r2.publish(Bool(data=(self.r2_toggle_state == 1)))
+
+        # Handle D-pad with incremental values (-1 to 1)
+        dpad_y_axis = get_axis(7, 0.0)
+        dpad_x_axis = get_axis(6, 0.0)
+
+        # Detect D-pad button presses
+        dpad_up_pressed = (dpad_y_axis < -0.5) or get_button(13)
+        dpad_down_pressed = (dpad_y_axis > 0.5) or get_button(14)
+        dpad_left_pressed = (dpad_x_axis < -0.5) or get_button(15)
+        dpad_right_pressed = (dpad_x_axis > 0.5) or get_button(16)
+
+        # Increment/decrement values on button press (rising edge)
+        if dpad_up_pressed and not self.prev_dpad_up:
+            self.dpad_vertical_value = min(1.0, self.dpad_vertical_value + self.dpad_increment)
+            self.get_logger().info(f'D-pad UP: vertical = {self.dpad_vertical_value:.2f}')
+
+        if dpad_down_pressed and not self.prev_dpad_down:
+            self.dpad_vertical_value = max(-1.0, self.dpad_vertical_value - self.dpad_increment)
+            self.get_logger().info(f'D-pad DOWN: vertical = {self.dpad_vertical_value:.2f}')
+
+        if dpad_left_pressed and not self.prev_dpad_left:
+            self.dpad_horizontal_value = max(-1.0, self.dpad_horizontal_value - self.dpad_increment)
+            self.get_logger().info(f'D-pad LEFT: horizontal = {self.dpad_horizontal_value:.2f}')
+
+        if dpad_right_pressed and not self.prev_dpad_right:
+            self.dpad_horizontal_value = min(1.0, self.dpad_horizontal_value + self.dpad_increment)
+            self.get_logger().info(f'D-pad RIGHT: horizontal = {self.dpad_horizontal_value:.2f}')
+
+        # Update previous D-pad states
+        self.prev_dpad_up = dpad_up_pressed
+        self.prev_dpad_down = dpad_down_pressed
+        self.prev_dpad_left = dpad_left_pressed
+        self.prev_dpad_right = dpad_right_pressed
+
+        # Publish D-pad incremental values (Float32 -1 to 1)
+        self.pub_dpad_horizontal.publish(Float32(data=self.dpad_horizontal_value))
+        self.pub_dpad_vertical.publish(Float32(data=self.dpad_vertical_value))
+
     def joy_callback(self, msg: Joy):
         # AXIS MAPPING (DS4 + joy_node, safe choice):
         #   throttle: left stick vertical  -> axes[1]
@@ -93,9 +193,9 @@ class RCMapper(Node):
         #   steering: -1 full left, +1 full right
         #
         # BUTTON MAPPING:
-        #   R1 (buttons[5]): Toggle auto_mode_enable (0=manual, 1=autonomy)
-        #   L1 (buttons[4]): Toggle inhibit_start (0=disabled, 1=enabled)
-        #   D-pad up/down (axes[7] or buttons[11]/[12]): Pulse width 500-2500ms
+        #   L1/L2/R1/R2: Toggle buttons (published as /ps4/button_*)
+        #   D-pad: Incremental values (published as /ps4/dpad_horizontal and /ps4/dpad_vertical)
+        #   D-pad up/down (axes[7] or buttons[11]/[12]): Also controls headlamp PWM 500-2500ms
         #     Up = +500ms per press, Down = -500ms per press (incremental)
 
         if len(msg.axes) < 2:
@@ -128,31 +228,8 @@ class RCMapper(Node):
         self.pub_throttle.publish(t_msg)
         self.pub_steering.publish(s_msg)
 
-        # Handle button presses for toggle behavior
-        if len(msg.buttons) > 5:
-            # R1 button (buttons[5]) - Toggle auto mode
-            current_r1 = bool(msg.buttons[5])
-            if current_r1 and not self.prev_r1_state:
-                # Button just pressed (rising edge)
-                self.auto_mode_enabled = not self.auto_mode_enabled
-                auto_msg = Bool()
-                auto_msg.data = self.auto_mode_enabled
-                self.pub_auto_mode.publish(auto_msg)
-                mode_str = "autonomy" if self.auto_mode_enabled else "manual"
-                self.get_logger().info(f'R1 pressed: Auto mode = {mode_str} ({int(self.auto_mode_enabled)})')
-            self.prev_r1_state = current_r1
-
-            # L1 button (buttons[4]) - Toggle inhibit start
-            current_l1 = bool(msg.buttons[4])
-            if current_l1 and not self.prev_l1_state:
-                # Button just pressed (rising edge)
-                self.inhibit_start_enabled = not self.inhibit_start_enabled
-                inhibit_msg = Bool()
-                inhibit_msg.data = self.inhibit_start_enabled
-                self.pub_inhibit_start.publish(inhibit_msg)
-                state_str = "enabled" if self.inhibit_start_enabled else "disabled"
-                self.get_logger().info(f'L1 pressed: Inhibit start = {state_str} ({int(self.inhibit_start_enabled)})')
-            self.prev_l1_state = current_l1
+        # Publish individual button topics
+        self.publish_individual_buttons(msg)
 
         # Handle D-pad up/down for pulse width control (500-2500ms, 500ms steps)
         # D-pad mapping varies by controller/joy_node:

@@ -1,0 +1,14 @@
+[Unit]
+Description=PS4 Controller Bluetooth Auto-Reconnect
+After=bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/abhijeet/home/abhijeet/ros2_ws/bluetooth_reconnect.sh
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

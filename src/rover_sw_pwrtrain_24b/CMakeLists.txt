@@ -28,6 +28,7 @@ set (CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 set (CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 # Node
 add_executable(rover_sw_pwrtrain_24b 
+src/get_telemetry_wrapper.c
 src/main.cpp
 src/ros2nodeinterface.cpp
 src/rover_sw_pwrtrain_24b.cpp
@@ -98,4 +99,4 @@ add_custom_command(
 				   )				   
 endforeach(file_i)
 ament_package()
-# Generated on Fri Jan 02 20:21:55 2026
+# Generated on Fri Jan 16 23:21:44 2026

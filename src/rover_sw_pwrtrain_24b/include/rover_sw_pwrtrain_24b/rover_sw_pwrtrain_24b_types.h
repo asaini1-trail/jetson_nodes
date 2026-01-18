@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.45
+ * Model version              : 1.108
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Fri Jan  2 20:21:50 2026
+ * C++ source code generated on : Fri Jan 16 23:21:35 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -20,6 +20,17 @@
 #ifndef rover_sw_pwrtrain_24b_types_h_
 #define rover_sw_pwrtrain_24b_types_h_
 #include "rtwtypes.h"
+#ifndef DEFINED_TYPEDEF_FOR_collision_flt_
+#define DEFINED_TYPEDEF_FOR_collision_flt_
+
+typedef enum {
+  NONE = 0,                            /* Default value */
+  MILD,
+  SEVERE
+} collision_flt;
+
+#endif
+
 #ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Int32_
 #define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Int32_
 
@@ -50,7 +61,66 @@ struct SL_Bus_std_msgs_Bool
 
 #endif
 
-/* Custom Type definition for MATLABSystem: '<S52>/SourceBlock' */
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
+
+struct SL_Bus_ROSVariableLengthArrayInfo
+{
+  uint32_T CurrentLength;
+  uint32_T ReceivedLength;
+};
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayDimension_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayDimension_
+
+struct SL_Bus_std_msgs_MultiArrayDimension
+{
+  uint8_T label[128];
+  SL_Bus_ROSVariableLengthArrayInfo label_SL_Info;
+  uint32_T size;
+  uint32_T stride;
+};
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayLayout_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayLayout_
+
+struct SL_Bus_std_msgs_MultiArrayLayout
+{
+  SL_Bus_std_msgs_MultiArrayDimension dim[16];
+  SL_Bus_ROSVariableLengthArrayInfo dim_SL_Info;
+  uint32_T data_offset;
+};
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Float32MultiArray_
+#define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Float32MultiArray_
+
+struct SL_Bus_std_msgs_Float32MultiArray
+{
+  SL_Bus_std_msgs_MultiArrayLayout layout;
+  real32_T data[128];
+  SL_Bus_ROSVariableLengthArrayInfo data_SL_Info;
+};
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_throttle_decay_mode_
+#define DEFINED_TYPEDEF_FOR_throttle_decay_mode_
+
+typedef enum {
+  NORMAL = 0,                          /* Default value */
+  EMERGENCY,
+  COMM_LOSS
+} throttle_decay_mode;
+
+#endif
+
+/* Custom Type definition for MATLABSystem: '<S57>/SinkBlock' */
 #include "rmw/qos_profiles.h"
 #ifndef struct_sJ4ih70VmKcvCeguWN0mNVF
 #define struct_sJ4ih70VmKcvCeguWN0mNVF
@@ -135,7 +205,6 @@ struct nav_slalgs_internal_PurePursu_T
 {
   int32_T isInitialized;
   cell_wrap_rover_sw_pwrtrain_2_T inputVarSize[2];
-  boolean_T CacheInputSizes;
   real_T MaxAngularVelocity;
   real_T LookaheadDistance;
   real_T DesiredLinearVelocity;
@@ -143,7 +212,7 @@ struct nav_slalgs_internal_PurePursu_T
   real_T ProjectionLineIndex;
   real_T LookaheadPoint[2];
   real_T LastPose[3];
-  real_T WaypointsInternal[20000];
+  real_T WaypointsInternal[1756];
 };
 
 #endif                              /* struct_nav_slalgs_internal_PurePursu_T */

@@ -22,6 +22,7 @@ setup(
     entry_points={
         'console_scripts': [
             'rc_mapper = gridrover_teleop.rc_mapper:main',
+            'gps_recorder = gridrover_teleop.gps_recorder:main',
         ],
     },
 )

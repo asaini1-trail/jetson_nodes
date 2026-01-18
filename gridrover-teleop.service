@@ -1,0 +1,37 @@
+[Unit]
+Description=GridRover Teleop Service - PS4 Controller and Motor Control
+After=network.target bluetooth.service ps4-bluetooth-reconnect.service
+Wants=bluetooth.service ps4-bluetooth-reconnect.service
+
+[Service]
+Type=simple
+User=abhijeet
+Group=abhijeet
+WorkingDirectory=/home/abhijeet/home/abhijeet/ros2_ws
+
+# Environment setup for ROS2
+Environment="ROS_DISTRO=humble"
+Environment="ROS_DOMAIN_ID=0"
+Environment="ROS_LOCALHOST_ONLY=0"
+
+# Source ROS2 and workspace setup
+ExecStartPre=/bin/bash -c 'source /opt/ros/humble/setup.bash && source /home/abhijeet/home/abhijeet/ros2_ws/install/setup.bash'
+
+# Launch the teleop system
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash && source /home/abhijeet/home/abhijeet/ros2_ws/install/setup.bash && ros2 launch gridrover_teleop teleop.launch.py'
+
+# Restart policy
+Restart=on-failure
+RestartSec=5s
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=gridrover-teleop
+
+# Wait for controller to be connected before starting
+# (Optional - remove this if you want to start anyway and wait for controller)
+# ExecStartPre=/bin/bash -c 'timeout 30 bash -c "until ls /dev/input/js* 2>/dev/null; do sleep 1; done"'
+
+[Install]
+WantedBy=multi-user.target

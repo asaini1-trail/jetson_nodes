@@ -1,0 +1,18 @@
+[Unit]
+Description=GridRover Powertrain Control Node (rover_sw_pwrtrain_24b)
+After=network.target
+
+[Service]
+Type=simple
+User=abhijeet
+WorkingDirectory=/home/abhijeet/home/abhijeet/ros2_ws
+Environment="ROS_DOMAIN_ID=7"
+Environment="RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash && source /home/abhijeet/home/abhijeet/ros2_ws/install/setup.bash && ros2 run rover_sw_pwrtrain_24b rover_sw_pwrtrain_24b'
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

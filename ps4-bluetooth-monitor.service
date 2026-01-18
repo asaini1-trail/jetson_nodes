@@ -1,0 +1,15 @@
+[Unit]
+Description=PS4 Controller Bluetooth Connection Monitor
+After=bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/home/abhijeet/home/abhijeet/ros2_ws/ps4_connection_monitor.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
